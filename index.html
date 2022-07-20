@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tzoker Generator</title>
+</head>
+<style>
+    .content{
+        text-align: center;
+        background-color: rgb(125, 113, 194);
+        font-size: medium;
+    }
+</style>
+<body class="content">
+    <h1>Tzoker Generator</h1>
+    
+    <h3>5 Numbers:</h3>
+    <script lang="javascript">
+        var array=[];
+        while(array.length<5){            
+            var a=Math.floor(Math.random()*45 +1);  
+            if(!array.includes(a)){ array.push(a); }                               
+        }
+        document.write(array);
+    </script>
+
+    <h3>Tzoker Number:</h3>
+    <script lang="javascript">
+        var j=Math.floor(Math.random()*20 +1);
+        document.write(j);
+    </script>
+
+    <h1><button id="btn">reload!</button> </h1>
+    <script>
+        var button = document.getElementById("btn");
+        button.addEventListener("click", function(){location.reload()});
+    </script>
+</body>
+</html>
