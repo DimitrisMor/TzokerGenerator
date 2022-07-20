@@ -16,25 +16,13 @@
     <h1>Tzoker Generator</h1>
     
     <h3>5 Numbers:</h3>
-    <script lang="javascript">
-        var array=[];
-        while(array.length<5){            
-            var a=Math.floor(Math.random()*45 +1);  
-            if(!array.includes(a)){ array.push(a); }                               
-        }
-        document.write(array);
-    </script>
+    <script src="random.js" type="text/javascript"></script>
+    <script>numbers();</script>       
 
     <h3>Tzoker Number:</h3>
-    <script lang="javascript">
-        var j=Math.floor(Math.random()*20 +1);
-        document.write(j);
-    </script>
+    <script> tzoker(); </script>
 
     <h1><button id="btn">reload!</button> </h1>
-    <script>
-        var button = document.getElementById("btn");
-        button.addEventListener("click", function(){location.reload()});
-    </script>
+    <script> button(); </script>
 </body>
 </html>
